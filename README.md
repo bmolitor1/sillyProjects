@@ -21,9 +21,8 @@ automatically finds the size of window, but you should be able to enter your own
 
 how to use:
 
-gcc aS4.c -o as4
-
-./as4 [width of window] [height of window] [length of snake, default=5]
+`gcc aS4.c -o as4
+./as4 [width of window] [height of window] [length of snake, default=5]`
 
 --------------------------------------------------------
 ring.c
@@ -35,6 +34,5 @@ the option1, when filled with literally anything, adds text to the output. it's 
 
 how to use:
 
-gcc ring.c -o ding
-
-./ding [option1]
+`gcc ring.c -o ding
+./ding [option1]`
