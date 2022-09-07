@@ -1,5 +1,6 @@
 # sillyProjects
 anything i developed in wsl ubuntu and compiled with gcc without any flags unless otherwise noted
+
 no, these aren't well developed with documentation or a --help option, srry
 
 somethings will probably only work in ubuntu (aS4, for example, relies on a system call to get the size of the terminal)
@@ -21,9 +22,9 @@ automatically finds the size of window, but you should be able to enter your own
 
 how to use:
 
-`gcc aS4.c -o as4
+```gcc aS4.c -o as4
 
-./as4 [width of window] [height of window] [length of snake, default=5]`
+./as4 [width of window] [height of window] [length of snake, default=5]```
 
 --------------------------------------------------------
 ring.c
@@ -35,6 +36,6 @@ the option1, when filled with literally anything, adds text to the output. it's 
 
 how to use:
 
-`gcc ring.c -o ding
+```gcc ring.c -o ding
 
-./ding [option1]`
+./ding [option1]```
