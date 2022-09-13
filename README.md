@@ -22,9 +22,30 @@ automatically finds the size of window, but you should be able to enter your own
 
 how to use:
 
-```gcc aS4.c -o as4```
+- ```gcc aS4.c -o as4```
 
-```./as4 [width of window] [height of window] [length of snake, default=5]```
+- ```./as4 [width of window] [height of window] [length of snake, default=5]```
+
+--------------------------------------------------------
+mazeGen3.c
+
+randomly generates a maze using Dijkstra's algorithm, outputed with 
+
+I already knew the algorithm from a couple networks classes in both grad and undergrad, so when I saw that Prim's algorithm is literally the first picture on the wikipedia page for "maze generation algorithms," and is apparently the same thing more or less, i just hacked the code together.
+
+automatically scales to size of terminal. if you want a maze of specific size, you'll have to modify the code (just change int sizej to your desired height/3 and sizek to your desired width/3).
+
+i doubt anyone will use this for like a maze solving program, but you'd have to modify the code slightly to add the start and end characters since i just have an opening in the border.
+
+
+how to use:
+- ```gcc mazeGen3.c -o maze```
+- ```./maze```
+
+note:
+if you actually want to solve a maze by hand instead of writing a bot to do it (if you need to kill a few minutes, as well as shave a couple off the end of your life), i'd recommend outputing to a file then using a cursor to navigate. it works well with vim because the minimal padding around the maze accidentally fits the vim interface perfectly:
+-```./maze > solveThis.txt```
+-```vim solveThis.txt```
 
 --------------------------------------------------------
 ring.c
@@ -36,6 +57,6 @@ the option1, when filled with literally anything, adds text to the output. it's 
 
 how to use:
 
-```gcc ring.c -o ding```
+- ```gcc ring.c -o ding```
 
-```./ding [option1]```
+- ```./ding [option1]```
