@@ -44,8 +44,8 @@ how to use:
 
 note:
 if you actually want to solve a maze by hand instead of writing a bot to do it (if you need to kill a few minutes, as well as shave a couple off the end of your life), i'd recommend outputing to a file then using a cursor to navigate. it works well with vim because the minimal padding around the maze accidentally fits the vim interface perfectly:
--```./maze > solveThis.txt```
--```vim solveThis.txt```
+- ```./maze > solveThis.txt```
+- ```vim solveThis.txt```
 
 --------------------------------------------------------
 ring.c
