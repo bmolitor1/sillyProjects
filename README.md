@@ -37,6 +37,8 @@ automatically scales to size of terminal. if you want a maze of specific size, y
 
 i doubt anyone will use this for like a maze solving program, but you'd have to modify the code slightly to add the start and end characters since i just have an opening in the border.
 
+yes, it uses gotos, but idk an easy way to do vim block comments lol
+
 
 how to use:
 - ```gcc mazeGen3.c -o maze```
