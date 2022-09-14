@@ -50,6 +50,16 @@ if you actually want to solve a maze by hand instead of writing a bot to do it (
 - ```vim solveThis.txt```
 
 --------------------------------------------------------
+mazeGen4.c
+
+literally just mazeGen3.c but prints with grey spaces instead of X's for walls.
+
+can't be good if used for maze solving algorithms, but more human readable.
+
+how to use:
+- ```see above```
+
+--------------------------------------------------------
 ring.c
 
 prints the bell character. just wanted to know what happens (i was playing with control characters). wsl interprets it as the notification bell and rings it.
