@@ -14,7 +14,7 @@ struct block{
 	int used;
 };
 
-int main(){
+int main(int argc, char* argv[]){
 	char buff[255];
         system("tput cols > output.txt");
         FILE* file = fopen("output.txt","r");
@@ -30,6 +30,12 @@ int main(){
         int height = atoi(buff2) - 2;
 	int sizej = height/3;
 	int sizek = width/3;
+	
+	if(argc > 2){
+		sizek = atoi(argv[1]);
+		sizej = atoi(argv[2]);
+	}
+
 	struct block maze[sizej][sizek];
 	srand(time(NULL));
 
