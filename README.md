@@ -1,5 +1,5 @@
 # sillyProjects
-anything i developed in wsl ubuntu and compiled with gcc without any flags unless otherwise noted
+anything i developed in wsl ubuntu (and now VS Code!!) and compiled with gcc without any flags unless otherwise noted
 
 no, these aren't well developed with documentation or a --help option, srry
 
@@ -7,7 +7,29 @@ somethings will probably only work in ubuntu (aS4, for example, relies on a syst
 
 Files:
 --------------------------------------------------------
-aS4.c
+**colorPicker**
+
+Uses the mouse to pick a color. vertically in the window for green, horizontal for red, scroll for blue. Press F to push RGB values to console. (Console also tells you what inputs are being taken by wasd and mouse, leftover from the first tutorial i followed). 
+
+Future: I would like to figure out how to sync the refresh with the drawing because of visual artifacts (there is a flag in SDL_CreateRenderer for this, but I didn't try it before pushing)
+
+my first foray into the world of SDL! Why SDL? Because I wanted to play with graphics! You know how hard it is to get people interested in programming when you spend like an hour talking about it, and it ends up just printing like "0.375" to console because that's the answer to a massive problem you were solving or perhaps it's the compression ratio from your 2 hour lecture on Huffman Coding, ending with the example "I love dog". Maybe, you can get it to take inputs. Maybe, it even connects to your other computer via TCP, and you can text yourself across the room.
+Really cool stuff, but it can be dry to a lot of people. But imagine if you could move shapes around on a screen. And when you add ifs, loops, inputs, objects, structs, file i/o, etc, you can visualize it immediately. That's amazing. JavaScript with html kind of already does this easily, but JavaScript is a different world. I'm not saying people don't like coding in C because there's no pretty colors, but it certainly doesn't help. I'm also not gonna set off on a journey to make an educational library, but...
+The colors are pretty. Pick a couple, stay awhile.
+
+The base code came from Sonar Systems SDL2 tutorial series (https://www.youtube.com/watch?v=jUZZC9UXyFs)
+
+how to use:
+in command propmt:
+- '''make.bat'''
+it should run itself
+
+- why make.bat? i was in a argument with MSYS2 
+  - Because it didn't import '''make''' correctly, so i made a batch file. 
+- Why does it make an executable called mGo? 
+  - Because I horrible at naming executables. the first version was m, named because the MakeFile should have made it, then i wanted it to Go work. Feel free to rename
+--------------------------------------------------------
+**aS4.c**
 
 "autosnake v4"
 
@@ -27,7 +49,7 @@ how to use:
 - ```./as4 [width of window] [height of window] [length of snake, default=5]```
 
 --------------------------------------------------------
-mazeGen3.c
+**mazeGen3.c**
 
 randomly generates a maze using Dijkstra's algorithm, outputed with 
 
@@ -50,7 +72,7 @@ if you actually want to solve a maze by hand instead of writing a bot to do it (
 - ```vim solveThis.txt```
 
 --------------------------------------------------------
-mazeGen4.c
+**mazeGen4.c**
 
 literally just mazeGen3.c but prints with grey spaces instead of X's for walls.
 
@@ -60,7 +82,7 @@ how to use:
 - ```see above```
 
 --------------------------------------------------------
-ring.c
+**ring.c**
 
 prints the bell character. just wanted to know what happens (i was playing with control characters). wsl interprets it as the notification bell and rings it.
 
