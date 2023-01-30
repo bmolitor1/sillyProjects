@@ -29,6 +29,28 @@ it should run itself
 - Why does it make an executable called mGo? 
   - Because I horrible at naming executables. the first version was m, named because the MakeFile should have made it, then i wanted it to Go work. Feel free to rename
 --------------------------------------------------------
+**toDoList.c**
+
+it's a todo list program
+
+the ultimate procrastination is to make a todo list, so i *made* a todo list
+
+it's straight forward, just compile with 
+
+`gcc toDoList.c -o todo`
+
+to add something, type `add`, and it will ask you what task to add
+
+to finish a task, type `finish`, and it'll ask for the index of what to delete
+
+quit with `quit`
+
+The program saves upon exit
+
+note, you can only have 256 tasks, so take it easy, ok?
+
+
+--------------------------------------------------------
 **aS4.c**
 
 "autosnake v4"
